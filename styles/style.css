@@ -12,12 +12,9 @@
 
 .header{
   display: grid; 
-  /* gap: 65px;; */
   padding:10px;
   grid-template-rows: 1fr min-content 1fr;
   min-height: 668px;
-  margin-block-end: 40px;
- 
 }
 
 .decorated-zone{
@@ -163,7 +160,7 @@
 }
 
 .paragraph{
-  /* background-color: var(--accent-color); */
+  background-color: var(--accent-color);
   color: var(--color-section-text);
   font-family: var(--font-family);
   font-size: var(--font-size);
@@ -186,6 +183,7 @@
 .section_one{
   display: grid;
   gap:20px;
+  padding-block-start: 40px;
 
 }
 
