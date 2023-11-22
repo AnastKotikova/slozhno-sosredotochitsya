@@ -3,75 +3,69 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-color: var(--color-section-text);
-  background-image:url(/images/cover-image-dark.png);
+  background-image: url(/images/cover-image-dark.png);
   background-position: bottom center;
   background-size: cover;
   background-attachment: fixed;
   display: grid;
   justify-items: center;
-  
 }
 
-.header{
-  display: grid; 
-  padding:10px;
+.header {
+  display: grid;
+  padding: 10px;
   grid-template-rows: 1fr min-content 1fr;
   min-height: 668px;
   margin-block-end: 40px;
 }
 
-.decorated-zone{
+.decorated-zone {
   position: relative;
-  
 }
 
-.decorated-zone::before{
+.decorated-zone::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
   right: 10px;
-  top:10px;
-
-
+  top: 10px;
 }
 
-.decorated-zone::after{
+.decorated-zone::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 25px;
   height: 25px;
   border-left: 1px solid var(--accent-color);
   border-bottom: 1px solid var(--accent-color);
-  bottom: 10px ;
-  left:10px;
-
+  bottom: 10px;
+  left: 10px;
 }
 
-.decoration_elements{
+.decoration_elements {
   position: absolute;
   block-size: 25px;
   inline-size: 60px;
   right: 10px;
   top: 10px;
-  
 }
 
-.decoration_elements::before{
-  content: 'REC';
+.decoration_elements::before {
+  content: "REC";
   position: absolute;
   color: var(--accent-color);
   font-size: var(--font-size);
-  
+
   font-family: var(--font-family);
   font-weight: 400;
-  line-height: 25px;  
+  line-height: 25px;
 }
 
-.decoration_elements::after{
-  content: '';
+.decoration_elements::after {
+  content: "";
   width: 9px;
   height: 9px;
   /* border: 5px solid var(--accent-color); */
@@ -79,47 +73,63 @@
   right: 9px;
   border-radius: 50%;
   box-shadow: 0 0 8px 2px var(--accent-color);
-  top:8px;
+  top: 8px;
   background-color: var(--accent-color);
 }
 
-
-.header__theme-menu{
+.header__theme-menu {
   display: grid;
- justify-content: end;
- justify-items: center;
- font-family: var(--font-family);
+  justify-content: end;
+  justify-items: center;
+  font-family: var(--font-family);
   font-size: var(--font-size);
   font-weight: 400;
   line-height: var(--line-height);
   align-items: center;
 }
 
-.header__theme-menu-list{
+.header__theme-menu-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:10px;
-  
-  
-  
+  gap: 10px;
 }
 
-.header__theme-menu-button{
+.header__theme-menu-button {
   outline: none;
   color: var(--accent-color);
-  border:none;
+  border: 1px solid transparent;
   background-color: transparent;
+  padding: 0px 13px;
+}
+
+.header__theme-menu-button:hover{
+  border: 1px solid rgba(255, 0, 112, 0.40);
+  cursor: pointer;
  
 }
 
-.header__theme-menu-button_type_dark{
-  padding: 0px 13px; 
-  border:1px solid var(--accent-color);
+.header__theme-menu-button:focus-visible{
+
+  border-block-end:1px solid var(--accent-color);
+
 }
 
-.title{
-  color:#DB00FF;
+.header__theme-menu-button_active {
+  border-color: var(--accent-color);
+}
+
+.header__theme-menu-button_active{
+  pointer-events: none;
+}
+
+.header__theme-menu-button_type_dark {
+  /* padding: 0px 13px; */
+  /* border: 1px solid var(--accent-color); */
+}
+
+.title {
+  color: #db00ff;
   text-shadow: 4px 4px 0 var(--accent-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-family: var(--font-family);
@@ -128,49 +138,43 @@
   line-height: 82.5%;
 }
 
-.text{
-  color:var(--text-color);
+.text {
+  color: var(--text-color);
   font-family: var(--font-family);
   background-color: var(--accent-color);
-
 }
 
-.main{
-display: grid;
-gap:50px;
-
+.main {
+  display: grid;
+  gap: 50px;
 }
 
-.section{
-  background-color: var(--color-section-text);
-  color:var(--text-main-color);
+.section {
+  /* background-color: var(--color-section-text); */
+  color: var(--text-main-color);
   font-family: var(--font-family);
   font-size: var(--font-size);
   font-weight: 400;
   line-height: var(--line-height);
   display: grid;
-  gap:20px;
-  padding:0px 10px; 
-
+  gap: 20px;
+  padding: 0px 10px;
 }
 
-
-.content_section{
+.content_section {
   display: grid;
   gap: 10px;
-
 }
 
-.chapter{
+.chapter {
   color: var(--accent-color);
   font-size: var(--font-size);
   font-weight: var(--font-weight);
   font-family: var(--font-family);
   line-height: var(--line-height);
-
 }
 
-.paragraph{
+.paragraph {
   background-color: var(--accent-color);
   color: var(--color-section-text);
   font-family: var(--font-family);
@@ -178,31 +182,21 @@ gap:50px;
   font-weight: var(--font-weight);
   line-height: var(--line-height);
   align-self: center;
-  
-
-
-
 }
 
-
-
-
-
-.section_gallery{
-  display:grid;
-  gap:10px;
+.section_gallery {
+  display: grid;
+  gap: 10px;
   margin-block-end: 40px;
 }
-.image{
-  width:100%;
-  
+.image {
+  width: 100%;
 }
 
-.footer{
- display: flex;
- justify-content: center;
+.footer {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding:  10px;
+  padding: 10px;
   min-block-size: 668px;
-
 }
