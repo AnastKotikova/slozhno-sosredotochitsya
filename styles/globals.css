@@ -15,7 +15,13 @@ body {
 h1,h2,h3,h4,h5,h6,p, section {
   margin: 0px;
   padding: 0px;
+    margin-block-start:0;
+    margin-block-end:0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
 }
+
 
 ul,li {
   margin: 0px;
@@ -35,3 +41,4 @@ button,a {
   font-size: inherit;
   line-height: inherit;
 }
+
