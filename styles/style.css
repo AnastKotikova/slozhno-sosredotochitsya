@@ -9,14 +9,20 @@
   background-attachment: fixed;
   display: grid;
   justify-items: center;
+  max-inline-size: 1024px;
+ 
 }
 
 .header {
   display: grid;
   padding: 10px;
   grid-template-rows: 1fr min-content 1fr;
+  grid-template-columns: auto;
   min-height: 668px;
   margin-block-end: 40px;
+  min-block-size: 100vh;
+  width: 100%;
+
 }
 
 .decorated-zone {
@@ -184,6 +190,18 @@
   align-self: center;
 }
 
+.link{
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.link:hover{
+  border-bottom: 1px solid var(--text-color);
+}
+
+.link:focus-visible{
+  border-block-end:1px solid var(--text-color);;
+}
+
 .section_gallery {
   display: grid;
   gap: 10px;
@@ -200,3 +218,16 @@
   padding: 10px;
   min-block-size: 668px;
 }
+
+@media (width >= 768px) {
+  .header{
+    padding: 0px;
+  }
+  .header__theme-menu{
+    padding: 20px 20px 0px 0px;
+  }
+
+}
+
+
+  

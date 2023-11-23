@@ -10,3 +10,15 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+:root.page.theme_dark{
+  --accent-color:#FF0070;
+  --color-section-text:#000028;
+  --text-color:#F1B2CE;
+  --text-main-color:#F1B2CE;
+  --font-family: 'IBM Plex Mono';
+  --font-size: 18px;
+  --font-style: normal;
+  --font-weight: 700;
+  --line-height: 130%; /* 130% */
+}
