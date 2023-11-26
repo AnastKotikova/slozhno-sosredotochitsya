@@ -9,7 +9,7 @@
   background-attachment: fixed;
   display: grid;
   justify-items: center;
-  max-inline-size: 1024px;
+  
 }
 
 .header {
@@ -64,7 +64,7 @@
   position: absolute;
   color: var(--accent-color, #ff0070);
   font-size: var(--font-size);
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font-family), monospace;
   font-weight: 400;
   line-height: 25px;
 }
@@ -83,7 +83,7 @@
 
 .header__theme-menu {
   justify-self: end;
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font-family), monospace;
   font-size: var(--font-size);
   font-weight: 400;
   line-height: var(--line-height);
@@ -130,7 +130,7 @@
   color: #db00ff;
   text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font-family), monospace;
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
@@ -143,7 +143,7 @@
 
 .section {
   color: var(--text-color, #f1b2ce);
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font-family), monospace;
   font-size: var(--font-size);
   font-weight: 400;
   line-height: var(--line-height);
@@ -170,7 +170,7 @@
 
 .title_decor {
   color: var(--color-section-text, #000028);
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font-family), monospace;
   font-size: var(--font-size);
   font-weight: var(--font-weight);
   line-height: var(--line-height);
