@@ -58,7 +58,7 @@
 }
 
 .theme_light .title_gallery {
-  color: var(--color-section-text, #000028);
+  color: var(--text-color);
   background-color: var(--accent-color, #ff8dcb);
 }
 
@@ -69,10 +69,7 @@
 .theme_light .header__theme-menu-button:focus-visible {
   border-block-end: 1px solid var(--border-color-light-theme);
 }
-.theme_light .title_gallery {
-  color: var(--text-color);
-  background-color: var(--accent-color);
-}
+
 
 @media (width >= 1024px) {
   .theme_light .title {
