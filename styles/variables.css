@@ -6,9 +6,11 @@
   --accent-color: #ff0070;
   --color-section-text: #000028;
   --text-color: #f1b2ce;
-  --font-family: "IBM Plex Mono", sans-serif;
+  --font-family: "IBM Plex Mono", monospace;
   --font-size: 18px;
   --font-style: normal;
   --font-weight: 700;
   --line-height: 130%; /* 130% */
+  --title-color: #db00ff;
+  --background-image:  url(/images/cover-image-dark.png);
 }
