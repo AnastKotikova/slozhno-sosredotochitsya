@@ -90,6 +90,7 @@
   }
   .title {
     color: #ffc2e6;
+    text-shadow: 4px 4px 0 #ff0070;
   }
   .header__theme-menu-button {
     color: var(--text-color);
@@ -106,9 +107,6 @@
     color: var(--text-color);
   }
 
-  .title {
-    text-shadow: 4px 4px 0 #ff0070;
-  }
   .header__theme-menu-button_active {
     border-color: #353430;
   }
