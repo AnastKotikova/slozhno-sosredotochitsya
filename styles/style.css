@@ -186,6 +186,7 @@
 }
 
 .link {
+  outline: none;
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
@@ -195,7 +196,7 @@
 }
 
 .link:focus-visible {
-  border-block-end: 1px solid var(--text-color, #f1b2ce);
+  border: 1px solid var(--text-color, #f1b2ce);
 }
 
 .section_gallery {
